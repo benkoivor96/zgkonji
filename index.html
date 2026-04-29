@@ -9,13 +9,13 @@
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 
 :root {
-  --blue: #2980b9;
-  --blue-dark: #1a6a9e;
-  --blue-deeper: #155a85;
-  --blue-nav: #1e6fa0;
-  --blue-light: #3498db;
-  --blue-pale: #e8f4fc;
-  --blue-wash: #f0f7fc;
+  --blue: #1b3a6b;
+  --blue-dark: #152e56;
+  --blue-deeper: #0f2240;
+  --blue-nav: #2a6496;
+  --blue-light: #3b7dc0;
+  --blue-pale: #e6eef8;
+  --blue-wash: #f0f4fa;
   --white: #ffffff;
   --off-white: #f8f9fa;
   --gray-50: #f9fafb;
@@ -122,7 +122,7 @@ nav {
 .hero-bg {
   position: absolute; inset: 0;
   background:
-    linear-gradient(to right, rgba(30,111,160,0.85) 0%, rgba(30,111,160,0.5) 50%, rgba(30,111,160,0.3) 100%),
+    linear-gradient(to right, rgba(27,58,107,0.88) 0%, rgba(27,58,107,0.55) 50%, rgba(27,58,107,0.35) 100%),
     url('https://images.unsplash.com/photo-1553284965-83fd3e82fa5a?w=1920&q=80') center/cover no-repeat;
 }
 .hero-content {
@@ -184,7 +184,7 @@ nav {
 .btn-blue { background: var(--blue); color: #fff; }
 .btn-blue:hover {
   background: var(--blue-dark); transform: translateY(-1px);
-  box-shadow: 0 6px 20px rgba(41,128,185,0.3);
+  box-shadow: 0 6px 20px rgba(27,58,107,0.3);
 }
 @keyframes fadeUp {
   from { opacity: 0; transform: translateY(25px); }
@@ -307,12 +307,12 @@ nav {
 .discipline-card-overlay {
   position: absolute; inset: 0;
   background: linear-gradient(to top,
-    rgba(30,111,160,0.92) 0%, rgba(30,111,160,0.4) 45%, rgba(30,111,160,0.15) 100%);
+    rgba(27,58,107,0.92) 0%, rgba(27,58,107,0.4) 45%, rgba(27,58,107,0.15) 100%);
   transition: background 0.4s;
 }
 .discipline-card:hover .discipline-card-overlay {
   background: linear-gradient(to top,
-    rgba(30,111,160,0.96) 0%, rgba(30,111,160,0.55) 50%, rgba(30,111,160,0.25) 100%);
+    rgba(27,58,107,0.96) 0%, rgba(27,58,107,0.55) 50%, rgba(27,58,107,0.25) 100%);
 }
 .discipline-card-content {
   position: absolute; bottom: 0; left: 0; right: 0; padding: 1.8rem;
@@ -524,17 +524,7 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
 
 <!-- HEADER -->
 <header class="site-header">
-  <div style="margin-bottom: 0.5rem;">
-    <svg width="80" height="90" viewBox="0 0 80 90" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <rect x="10" y="30" width="60" height="50" rx="3" fill="#2980b9" opacity="0.1" stroke="#2980b9" stroke-width="1.5"/>
-      <rect x="20" y="35" width="10" height="15" rx="1" fill="#2980b9" opacity="0.2"/>
-      <rect x="35" y="35" width="10" height="15" rx="1" fill="#2980b9" opacity="0.2"/>
-      <rect x="50" y="35" width="10" height="15" rx="1" fill="#2980b9" opacity="0.2"/>
-      <path d="M30 20 C30 10, 50 5, 55 15 C58 8, 65 12, 62 18 L55 25 L50 28 L35 28 L30 25 Z" fill="#2980b9" opacity="0.7"/>
-      <text x="40" y="72" text-anchor="middle" font-family="serif" font-size="7" fill="#2980b9" font-weight="bold" letter-spacing="0.5">ZAGREBAČKI</text>
-      <text x="40" y="79" text-anchor="middle" font-family="serif" font-size="5.5" fill="#2980b9" letter-spacing="0.3">KONJIČKI SAVEZ</text>
-    </svg>
-  </div>
+  <img src="logo.png" alt="Zagrebački konjički savez — grb" class="header-logo">
   <h1 class="header-title">Zagrebački konjički savez</h1>
   <p class="header-subtitle">Zagreb Equestrian Association</p>
 </header>
@@ -546,14 +536,14 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
       <svg fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"/></svg>
     </a>
     <ul class="nav-links">
-      <li><a href="#discipline">Konjički sport</a></li>
+      <li><a href="konjicki-sport.html">Konjički sport</a></li>
       <li><a href="#">Kalendar</a></li>
       <li><a href="#skole">Škole jahanja</a></li>
       <li><a href="#">Prvenstvo Zagreba</a></li>
       <li><a href="#turnir">Lipanjski turnir</a></li>
       <li><a href="#">Članovi saveza</a></li>
       <li><a href="#">Dokumenti</a></li>
-      <li><a href="#kontakt">O nama</a></li>
+      <li><a href="o-nama.html">O nama</a></li>
     </ul>
     <button class="hamburger" id="hamburger" aria-label="Izbornik">
       <span></span><span></span><span></span>
@@ -564,14 +554,14 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
 <!-- MOBILE MENU -->
 <div class="mobile-menu" id="mobileMenu">
   <button class="mobile-close" id="mobileClose">&times;</button>
-  <a href="#discipline">Konjički sport</a>
+  <a href="konjicki-sport.html">Konjički sport</a>
   <a href="#">Kalendar</a>
   <a href="#skole">Škole jahanja</a>
   <a href="#">Prvenstvo Zagreba</a>
   <a href="#turnir">Lipanjski turnir</a>
   <a href="#">Članovi saveza</a>
   <a href="#">Dokumenti</a>
-  <a href="#kontakt">O nama</a>
+  <a href="o-nama.html">O nama</a>
 </div>
 
 <!-- HERO -->
@@ -662,8 +652,8 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
       <p class="section-desc" style="margin:0 auto;">FEI prepoznate discipline u kojima muškarci i žene ravnopravno nastupaju — individualno ili timski.</p>
     </div>
     <div class="discipline-grid">
-      <a class="discipline-card reveal reveal-d1" href="#">
-        <div class="discipline-card-bg" style="background-image:url('https://images.unsplash.com/photo-1449495169669-7b118f960251?w=800&q=80')"></div>
+      <a class="discipline-card reveal reveal-d1" href="konjicki-sport.html#preponsko">
+        <div class="discipline-card-bg" style="background-image:url('preponsko.jpg')"></div>
         <div class="discipline-card-overlay"></div>
         <div class="discipline-card-content">
           <div class="discipline-card-num">01</div>
@@ -671,8 +661,8 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
           <p>Najpoznatija disciplina — jahač i konj zajedno svladavaju parcours prepona u zadanom vremenu.</p>
         </div>
       </a>
-      <a class="discipline-card reveal reveal-d2" href="#">
-        <div class="discipline-card-bg" style="background-image:url('https://images.unsplash.com/photo-1596389885478-ecff04c1b503?w=800&q=80')"></div>
+      <a class="discipline-card reveal reveal-d2" href="konjicki-sport.html#dresurno">
+        <div class="discipline-card-bg" style="background-image:url('dresurno.jpg')"></div>
         <div class="discipline-card-overlay"></div>
         <div class="discipline-card-content">
           <div class="discipline-card-num">02</div>
@@ -680,8 +670,8 @@ footer { background: var(--gray-800); padding: 4rem 2rem 2rem; }
           <p>Elegancija i preciznost — savršena harmonija jahača i konja, poznata kao "balet na konju".</p>
         </div>
       </a>
-      <a class="discipline-card reveal reveal-d3" href="#">
-        <div class="discipline-card-bg" style="background-image:url('https://images.unsplash.com/photo-1508974239320-0a029497e820?w=800&q=80')"></div>
+      <a class="discipline-card reveal reveal-d3" href="konjicki-sport.html#daljinsko">
+        <div class="discipline-card-bg" style="background-image:url('daljinsko.jpg')"></div>
         <div class="discipline-card-overlay"></div>
         <div class="discipline-card-content">
           <div class="discipline-card-num">03</div>
